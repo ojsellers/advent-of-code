@@ -16,7 +16,7 @@ def check_col(x: int, pattern: list[str], smudges: int) -> bool:
             errors += 1
             if errors > smudges:
                 return False
-    return errors >= smudges
+    return errors == smudges
 
 
 def check_row(y: int, pattern: list[str], smudges: int) -> bool:
@@ -27,7 +27,7 @@ def check_row(y: int, pattern: list[str], smudges: int) -> bool:
             errors += 1
             if errors > smudges:
                 return False
-    return errors >= smudges
+    return errors == smudges
 
 
 def reflection_lines_sum(
